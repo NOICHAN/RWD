@@ -1,0 +1,164 @@
+/*cartpage start*/
+
+.cartpage {
+    display: flex;
+    justify-content: space-between;
+    @include mobile(){
+        flex-direction: column;
+    }
+}
+
+.cartpageMenu {
+    width: 200px;
+    flex: none;
+    margin-right: 3%;
+    @include mobile(){
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    i {
+        font-size: 32px;
+        margin-right: 5%;
+    }
+}
+
+.type li {
+    border-bottom: 1px solid $primaryColor;
+    line-height: 32px;
+
+    a {
+        padding-left: 3%;
+
+        &:hover {
+            background: $primaryColor;
+            color: #ffffff;
+        }
+    }
+}
+
+.cartpageBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+
+    a {
+        font-size: 25px;
+
+        @include pad() {
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            font-size: 50px;
+            z-index: 99;
+        }
+        @include mobile(){
+            font-size: 40px;
+        }
+    }
+}
+
+.search {
+    width: 100%;
+
+    input {
+        width: 80%;
+        border: 2px solid $primaryColor;
+        font-size: 20px;
+    }
+}
+
+.searchBtn {
+    background: $primaryColor;
+    color: #ffffff;
+    border: 2px solid $primaryColor;
+    font-size: 20px;
+}
+
+.shopping {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 30%;
+        margin: 2% 1%;
+        border: #000000 16%;
+        box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+        position: relative;
+        text-align: center;
+        @include pad() {
+            width: 47%;
+        }
+        @include mobile(){
+            width: 97%;
+        }
+    }
+
+    img {
+        @include pad() {
+            width: 100%;
+        }
+    }
+
+    .fa-heart {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        @include mobile(){
+            font-size: 30px;
+        }
+    }
+
+    .far {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .fas {
+        color: rgb(238, 113, 238);
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 20px;
+        color: $primaryColor;
+    }
+}
+
+.shoppingCart {
+    text-align: center;
+    color: #FF5E45;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    margin: 20px 10px;
+    padding: 5px;
+    font-weight: bold;
+
+    :hover {
+        background: #FF5E45;
+        color: #ffffff;
+    }
+}
+
+.active {
+    background: #FF5E45;
+    color: #ffffff;
+}
+
+/*cartpage end*/

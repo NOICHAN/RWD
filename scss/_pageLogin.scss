@@ -1,0 +1,45 @@
+/*login start*/
+
+.formLogin {
+    width: 300px;
+    margin: 0 auto;
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.login .formLogin .pure-form-stacked {
+    padding: 5%;
+    border-top: 3px solid #FF5E45;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+
+    label {
+        color: $primaryColor;
+    }
+    input {
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+    }
+    a {
+        color: #FF5E45;
+    }
+    button {
+        width: 100px;
+        padding: 3%;
+        background-color: rgb(153, 148, 148);
+        color: #ffffff;
+        margin: 5%;
+        &:hover {
+            background-color: orangered;
+        }
+    }
+}
+
+/*login end*/
