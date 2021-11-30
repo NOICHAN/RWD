@@ -3,7 +3,7 @@
 .cartpage {
     display: flex;
     justify-content: space-between;
-    @include mobile(){
+    @include pad(){
         flex-direction: column;
     }
 }
@@ -12,7 +12,7 @@
     width: 200px;
     flex: none;
     margin-right: 3%;
-    @include mobile(){
+    @include pad(){
         width: 100%;
         margin-bottom: 10%;
     }
@@ -150,7 +150,7 @@
     padding: 5px;
     font-weight: bold;
 
-    :hover {
+    &:hover {
         background: #FF5E45;
         color: #ffffff;
     }
